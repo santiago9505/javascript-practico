@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #196150;
+  width: 17%;
+  height: 100vh;
+  text-align: center;
+  gap: 2rem;
+}
+
+.icon__container {
+  display: flex;
+  height: 20%;
+  align-content: center;
+  justify-content: center;
+}
+
+.icon {
+}
+
+.menu__items {
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.img__container {
+  display: flex;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.main__title {
+  margin: 2rem 1rem;
+  font-size: 2rem;
+}
+
+.main__paragraph {
+  margin: 2rem 1rem;
+  font-size: 1.5rem;
+}
+
+.img__container {
+  margin: 4rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cuadradoSection {
+  width: 87%;
+  display: none;
+  padding: 0 1rem;
+}
+
+.square__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.medida1 {
+  position: absolute;
+  top: -2rem;
+}
+
+.medida2 {
+  position: absolute;
+  bottom: -2rem;
+}
+.medida3 {
+  top: 45%;
+  position: absolute;
+  right: 23rem;
+}
+.medida4 {
+  top: 45%;
+  position: absolute;
+  left: 23rem;
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logic__container {
+  display: flex;
+  gap: 3rem;
+}
+
+.input {
+  border: none;
+  font-size: 1rem;
+  margin: 0.7rem;
+  outline: none;
+  padding: 1rem;
+  text-align: center;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 2rem;
+}
+
+.calculo {
+  border: none;
+  margin: 0.7rem;
+  outline: none;
+  text-align: center;
+  padding: 0.5rem;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 2rem;
+}
+
+.form {
+  justify-content: center;
+  margin: 4rem 0;
+  display: flex;
+  gap: 3rem;
+}
+
+.container__form {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  text-align: center;
+  text-justify: center;
+  padding: 2rem;
+  background-color: #b4ed87;
+  height: 12rem;
+  border-radius: 2rem;
+}
+
+.calculate {
+  cursor: pointer;
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  text-align: center;
+  text-justify: auto;
+  border-radius: 2rem;
+}
+
+.popup {
+  position: absolute;
+  bottom: 7rem;
+  right: 10rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 10rem;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.trianguloSection {
+  width: 87%;
+  display: none;
+  padding: 0 1rem;
+}
+
+.triangle__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.container__form--triangle {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  text-align: center;
+  text-justify: center;
+  padding: 1rem;
+  background-color: #b4ed87;
+  height: 12rem;
+  border-radius: 2rem;
+}
+
+.form__triangle {
+  justify-content: center;
+  margin: 4rem 0;
+  display: flex;
+  gap: 3rem;
+}
+
+.logic__container--triangle {
+  display: flex;
+  gap: 1rem;
+}
+
+.circuloSection {
+  width: 87%;
+  display: none;
+  padding: 0 1rem;
+}
+
+.container__form--circle {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  text-align: center;
+  text-justify: center;
+  padding: 1rem;
+  background-color: #b4ed87;
+  height: 12rem;
+  border-radius: 2rem;
+}

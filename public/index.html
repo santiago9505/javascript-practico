@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>Figuras geométricas</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="icon__container">
+        <img class="icon" src="./assets/static/menu-icon.png" alt="icon" />
+      </div>
+      <ul class="menu__items">
+        <li>
+          <a id="squareA" href="#">Cuadrado</a>
+        </li>
+        <li>
+          <a id="triangleA" href="#">Triángulo</a>
+        </li>
+        <li>
+          <a id="circuleA" href="#">Círculo</a>
+        </li>
+      </ul>
+    </header>
+    <main id="main" class="main">
+      <article class="main__title">
+        <h1>Figuras Geométricas</h1>
+      </article>
+      <article class="main__paragraph">
+        <p>
+          Aquí podrás aprender un poco sobre figuras geométricas y cómo calcular
+          su perímetro y su área de una manera sencilla.
+        </p>
+      </article>
+      <div class="img__container">
+        <figure><img src="./assets/static/square.png" alt="Cuadrado" /></figure>
+        <figure>
+          <img src="./assets/static/triangle.png" alt="Triángulo" />
+        </figure>
+        <figure><img src="./assets/static/circle.png" alt="Círculo" /></figure>
+      </div>
+    </main>
+    <section id="cuadradoSection" class="cuadradoSection">
+      <article class="main__title">
+        <h1>Cuadrado</h1>
+      </article>
+      <div class="square__container">
+        <figure><img src="./assets/static/square.png" alt="" /></figure>
+        <article class="medida1"><p id="lado">lado = x</p></article>
+        <article class="medida2"><p id="lado2">lado = x</p></article>
+        <article class="medida3"><p id="lado3">lado = x</p></article>
+        <article class="medida4"><p id="lado4">lado = x</p></article>
+      </div>
+      <form class="form" action="">
+        <div class="container__form">
+          <div class="logic__container">
+            <label class="input__container" for=""
+              ><span>¿Cuanto mide de lado tu cuadrado?</span
+              ><input class="input" id="ladoCuadrado" type="text" required
+            /></label>
+            <label class="input__container" for="">
+              <span>¿Qué deseas calcular?</span>
+              <select id="perimetro/area" class="calculo">
+                <option value="default"></option>
+                <option>Perímetro</option>
+                <option>Área</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <button class="calculate" id="calculate">Calcular</button>
+          </div>
+        </div>
+      </form>
+      <div class="popup">
+        <span class="popuptext" id="myPopup"></span>
+        <p></p>
+      </div>
+    </section>
+    <section id="trianguloSection" class="trianguloSection">
+      <article class="main__title">
+        <h1>Triángulo</h1>
+      </article>
+      <div class="triangle__container">
+        <figure><img src="./assets/static/triangle.png" alt="" /></figure>
+        <article class="medida1"><p id="medidah">h(altura) = x</p></article>
+        <article class="medida2"><p id="medidab">b(base) = x</p></article>
+        <article class="medida3"><p id="medidal1">lado 2 = x</p></article>
+        <article class="medida4"><p id="medidal2">lado 1 = x</p></article>
+      </div>
+      <form class="form__triangle" action="">
+        <div class="container__form--triangle">
+          <div class="logic__container--triangle">
+            <label class="input__container" for=""
+              ><span>Base</span
+              ><input class="input" id="baseTriangulo" type="text" required
+            /></label>
+            <label class="input__container" for=""
+              ><span>Altura</span
+              ><input class="input" id="alturaTriangulo" type="text" required
+            /></label>
+            <label class="input__container" for=""
+              ><span>Lado 1</span
+              ><input class="input" id="lado1Triangulo" type="text" required
+            /></label>
+            <label class="input__container" for=""
+              ><span>Lado 2</span
+              ><input class="input" id="lado2Triangulo" type="text" required
+            /></label>
+            <label class="input__container" for="">
+              <span>¿Qué deseas calcular?</span>
+              <select id="trianglePerimetro/area" class="calculo">
+                <option value="default"></option>
+                <option>Perímetro</option>
+                <option>Área</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <button class="calculate" id="calculateTriangle">Calcular</button>
+          </div>
+        </div>
+      </form>
+      <div class="popup">
+        <span class="popuptext" id="myPopupTriangle"></span>
+        <p></p>
+      </div>
+    </section>
+    <section id="circuloSection" class="circuloSection">
+      <article class="main__title">
+        <h1>Círculo</h1>
+      </article>
+      <div class="square__container">
+        <figure><img src="./assets/static/circle.png" alt="" /></figure>
+        <article class="medida4"><p id="radio">radio = x</p></article>
+      </div>
+      <form class="form" action="">
+        <div class="container__form--circle">
+          <div class="logic__container">
+            <label class="input__container" for=""
+              ><span>¿Cuanto mide el radio de tu círculo?</span
+              ><input class="input" id="radioCirculo" type="text" required
+            /></label>
+            <label class="input__container" for="">
+              <span>¿Qué deseas calcular?</span>
+              <select id="circuloPerimetro/area" class="calculo">
+                <option value="default"></option>
+                <option>Perímetro</option>
+                <option>Área</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <button class="calculate" id="calculateCircle">Calcular</button>
+          </div>
+        </div>
+      </form>
+      <div class="popup">
+        <span class="popuptext" id="myPopupCircle"></span>
+        <p></p>
+      </div>
+    </section>
+    <script src="./figuras.js"></script>
+  </body>
+</html>
