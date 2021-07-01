@@ -58,7 +58,7 @@
           <div class="logic__container">
             <label class="input__container" for=""
               ><span>¿Cuanto mide de lado tu cuadrado?</span
-              ><input class="input" id="ladoCuadrado" type="text" required
+              ><input class="input" id="ladoCuadrado" type="number" required
             /></label>
             <label class="input__container" for="">
               <span>¿Qué deseas calcular?</span>
@@ -70,7 +70,9 @@
             </label>
           </div>
           <div>
-            <button class="calculate" id="calculate">Calcular</button>
+            <button type="button" class="calculate" id="calculate">
+              Calcular
+            </button>
           </div>
         </div>
       </form>
@@ -95,19 +97,29 @@
           <div class="logic__container--triangle">
             <label class="input__container" for=""
               ><span>Base</span
-              ><input class="input" id="baseTriangulo" type="text" required
+              ><input
+                type="number"
+                class="input"
+                id="baseTriangulo"
+                type="text"
+                required
             /></label>
             <label class="input__container" for=""
               ><span>Altura</span
-              ><input class="input" id="alturaTriangulo" type="text" required
+              ><input
+                type="number"
+                type="number"
+                class="input"
+                id="alturaTriangulo"
+                required
             /></label>
             <label class="input__container" for=""
               ><span>Lado 1</span
-              ><input class="input" id="lado1Triangulo" type="text" required
+              ><input class="input" id="lado1Triangulo" type="number" required
             /></label>
             <label class="input__container" for=""
               ><span>Lado 2</span
-              ><input class="input" id="lado2Triangulo" type="text" required
+              ><input class="input" id="lado2Triangulo" type="number" required
             /></label>
             <label class="input__container" for="">
               <span>¿Qué deseas calcular?</span>
@@ -119,7 +131,9 @@
             </label>
           </div>
           <div>
-            <button class="calculate" id="calculateTriangle">Calcular</button>
+            <button type="button" class="calculate" id="calculateTriangle">
+              Calcular
+            </button>
           </div>
         </div>
       </form>
@@ -141,7 +155,7 @@
           <div class="logic__container">
             <label class="input__container" for=""
               ><span>¿Cuanto mide el radio de tu círculo?</span
-              ><input class="input" id="radioCirculo" type="text" required
+              ><input class="input" id="radioCirculo" type="number" required
             /></label>
             <label class="input__container" for="">
               <span>¿Qué deseas calcular?</span>
@@ -153,7 +167,14 @@
             </label>
           </div>
           <div>
-            <button class="calculate" id="calculateCircle">Calcular</button>
+            <button
+              type="button"
+              class="calculate"
+              href="/"
+              id="calculateCircle"
+            >
+              Calcular
+            </button>
           </div>
         </div>
       </form>

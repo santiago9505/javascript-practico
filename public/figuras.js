@@ -46,7 +46,7 @@ console.groupEnd("");
 
 console.group("círculo");
 const perimetroCirculo = (r) => 2 * PI * r;
-const areaCírculo = (r) => PI * r ** 2;
+const areaCirculo = (r) => PI * r ** 2;
 console.groupEnd("");
 
 const toSquareSection = () => {
@@ -114,7 +114,7 @@ const calculateCircleNow = () => {
     result = perimetroCirculo(radioSelected.value);
     myPopupCircle.textContent = `El perímetro de tu círculo es de: ${result}`;
   } else if (perimetroAreaCirculo.value === "Área") {
-    result = areaCirculo(radioSelected);
+    result = areaCirculo(radioSelected.value);
     myPopupCircle.textContent = `El área de tu círculo es de: ${result}`;
   }
   myPopupCircle.classList.toggle("show");
