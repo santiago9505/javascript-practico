@@ -305,3 +305,138 @@ a {
   display: flex;
   gap: 3rem;
 }
+
+@media (max-width: 1148px) {
+  .medida3 {
+    right: 15rem;
+  }
+  .medida4 {
+    left: 15rem;
+  }
+  body {
+    flex-direction: column;
+  }
+  .header {
+    height: 20vh;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .menu__items {
+    margin: 2rem;
+    text-decoration: none;
+    list-style: none;
+    gap: 2rem;
+    flex-direction: row;
+    align-items: center;
+  }
+  .icon__container {
+    height: auto;
+    width: auto;
+    margin: 2rem;
+  }
+  .cuadradoSection {
+    width: 100%;
+  }
+  .trianguloSection {
+    width: 100%;
+  }
+  .circuloSection {
+    width: 100%;
+  }
+  .isoscelesSection {
+    width: 100%;
+  }
+}
+
+@media (max-width: 998px) {
+  .logic__container--triangle {
+    display: flex;
+    flex-direction: column;
+    columns: 5;
+  }
+  .container__form--triangle {
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #b4ed87;
+    height: auto;
+    border-radius: 2rem;
+  }
+}
+
+@media (max-width: 898px) {
+  .header {
+    height: 30vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .icon__container {
+    height: auto;
+    width: 1rem;
+    margin: 0.5rem;
+  }
+  .menu__items {
+    height: auto;
+    margin: 0;
+  }
+}
+
+@media (max-width: 848px) {
+  .medida3 {
+    right: 8rem;
+  }
+  .medida4 {
+    left: 8rem;
+  }
+}
+
+@media (max-width: 611px) {
+  .header {
+    height: 50vh;
+    gap: 1rem;
+  }
+  .menu__items {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .medida3 {
+    right: 4rem;
+  }
+  .medida4 {
+    left: 4rem;
+  }
+
+  @media (max-width: 490px) {
+    .cuadradoSection {
+      height: auto;
+    }
+    .circuloSection {
+      height: auto;
+    }
+    .container__form {
+      height: auto;
+    }
+    .container__form--circle {
+      height: auto;
+    }
+    .logic__container {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      height: auto;
+      border-radius: 2rem;
+    }
+    .input__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
