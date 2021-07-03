@@ -22,6 +22,9 @@
         <li>
           <a id="circuleA" href="#">Círculo</a>
         </li>
+        <li>
+          <a id="isoscelesA" href="#">Isósceles</a>
+        </li>
       </ul>
     </header>
     <main id="main" class="main">
@@ -180,6 +183,61 @@
       </form>
       <div class="popup">
         <span class="popuptext" id="myPopupCircle"></span>
+        <p></p>
+      </div>
+    </section>
+    <section id="isoscelesSection" class="isoscelesSection">
+      <article class="main__title">
+        <h1>Triángulo Isósceles</h1>
+      </article>
+      <div class="isosceles__container">
+        <figure class="isosceles__container">
+          <img src="./assets/static/isosceles.png" alt="" />
+        </figure>
+        <article class="medida1"><p id="alturaI">h(altura) = x</p></article>
+        <article class="medida2I"><p id="baseI">lado c = x</p></article>
+        <article class="medida3"><p id="lado1I">lado a = x</p></article>
+        <article class="medida4"><p id="lado2I">lado b = x</p></article>
+      </div>
+      <form class="form__isosceles" action="">
+        <div class="container__form--triangle">
+          <div class="logic__container--triangle">
+            <label class="input__container" for=""
+              ><span>Lado 1</span
+              ><input
+                type="number"
+                class="input"
+                id="lado1Iso"
+                type="text"
+                required
+            /></label>
+            <label class="input__container" for=""
+              ><span>Lado 2</span
+              ><input type="number" class="input" id="lado2Iso" required
+            /></label>
+            <label class="input__container" for=""
+              ><span>Lado 3</span
+              ><input class="input" id="lado3Iso" type="number" required
+            /></label>
+            <label class="input__container" for="">
+              <span>¿Qué deseas calcular?</span>
+              <select id="isoscelesPerimetro/area" class="calculo" required>
+                <option value="default"></option>
+                <option>Perímetro</option>
+                <option>Área</option>
+                <option>Altura</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <button type="button" class="calculate" id="calculateIso">
+              Calcular
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="popup">
+        <span class="popuptext" id="myPopupIso"></span>
         <p></p>
       </div>
     </section>
