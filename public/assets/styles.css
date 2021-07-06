@@ -380,6 +380,11 @@ a {
     width: 1rem;
     margin: 0.5rem;
   }
+  .img__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
   .menu__items {
     height: auto;
     margin: 0;
