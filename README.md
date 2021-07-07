@@ -15,3 +15,10 @@ On this repo I´m showing what I learnt on the Curso básico de Javascript https
 - Segundo: implementar las fórmulas en Javascript
 - Tercero: crear funciones
 - Cuarto paso: integrar JS con html
+
+## Taller #3: promedio, mediana y moda
+
+- Primer paso: definir las fórmulas
+- Segundo: implementar las fórmulas en Javascript
+- Tercero: crear funciones
+- Cuarto paso: integrar JS con html
